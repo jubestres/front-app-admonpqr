@@ -9,9 +9,9 @@
 </el-button>
 </el-col>
 <el-col :xs="6" :sm="6" :md="6" :lg="2" :xl="2" class="form-container__button-group">
-<el-button size="large" class="form-container__button-cancel" @click="goBack">Cancelar</el-button>
+<el-button size="large" class="form-container__button-cancel" @click="irAtras">Cancelar</el-button>
 <el-button type="primary" size="large" class="form-container__button-submit" @click="submit">
-    guardar
+    {{ tituloBoton }}
 </el-button>
 </el-col>
 </el-row>
@@ -35,16 +35,24 @@ const propiedad =defineProps({
     isOpen: Boolean,
 });
 
+console.log(propiedad.isEdit)
+const tituloBoton= computed (()=>(propiedad.isEdit ? 'Actualizar': 'Guardar'))
 
 const isVisible = computed (()=> propiedad.isOpen);
 
-const $emit = defineEmits(['update:is-open']);
+const $emit = defineEmits(['update:is-open','save' , 'update']);
 
-const goBack = () => {
+const irAtras = () => {
     $emit('update:is-open', false);
-
 };
 
+const submit=()=>{
+    if(propiedad.isEdit){
+        $emit('update')
+    }else{
+        $emit('save')
+    }
+}
 
 </script>
 

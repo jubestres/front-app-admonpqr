@@ -2,18 +2,18 @@
   <layout-main>
     <template #slotLayout>
       <Header 
-      :titulo="'Paises'" 
-      :tituloBoton="'Crear pais'" 
+      :titulo="'Cliente'" 
+      :tituloBoton="'Crear Cliente'" 
       :abrir="abrirFormulario" />
      
 
 
-      <Formulario :titulo="'Gestion de paises'" v-model:is-Open="mostrarFormulario" :is-edit="editandoFormulario">
+      <Formulario :titulo="'Gestion de cliente'" v-model:is-Open="mostrarFormulario" :is-edit="editandoFormulario">
 
         <template #slotform>
           <el-row :gutter="20">
             <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
-              <formpaises v-model:is-open="mostrarFormulario":is-edit="editandoFormulario"/>
+              <formcliente v-model:is-open="mostrarFormulario":is-edit="editandoFormulario"/>
             </el-col>
           </el-row>
         </template>
@@ -41,7 +41,7 @@
 <script lang="ts" setup>
 
 import LayoutMain from '../../components/LayoutMain.vue';
-import formpaises from './components/formpaises.vue'
+import formcliente from './components/formcliente.vue'
 import Formulario from '../../components/Formulario.vue';
 import Header from '../../components/Header.vue';
 import { reactive, ref } from 'vue';

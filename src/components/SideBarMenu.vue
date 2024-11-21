@@ -12,19 +12,17 @@
         <el-icon><Location /></el-icon>
         <span>Administrador</span>
       </template>
-      <el-menu-item index="/personas">Personas</el-menu-item>
-      <el-menu-item index="/cargos">Cargos</el-menu-item>
+      <el-menu-item index="/Arearespuesta">Arearespuesta</el-menu-item>
+      <el-menu-item index="/Barrios">Barrios</el-menu-item>
+      <el-menu-item index="/Cliente">Cliente</el-menu-item>
+      <el-menu-item index="/PQR">PQR</el-menu-item>
+      <el-menu-item index="/Proyectos">Proyectos</el-menu-item>
+      <el-menu-item index="/RadicadoPQR">RadicadoPQR</el-menu-item>
+      <el-menu-item index="/RespuestaPQR">RespuestaPQR</el-menu-item>
+      <el-menu-item index="/TipoSolicitud">TipoSolicitud</el-menu-item>
       <el-menu-item index="/paises">Paises</el-menu-item>
     </el-sub-menu>
-    <el-sub-menu index="2">
-      <template #title>
-        <el-icon><Location /></el-icon>
-        <span>Configuracion</span>
-      </template>
-      <el-menu-item index="/configuracion/personas">Personas</el-menu-item>
-      <el-menu-item index="/configuracion/cargos">Cargos</el-menu-item>
-      <el-menu-item index="/configuracion/paises">Paises</el-menu-item>
-    </el-sub-menu>
+    
   </el-menu>
 </template>
 

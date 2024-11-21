@@ -10,7 +10,8 @@
             </el-aside>
 
             <el-main class="main-content">
-                <slot name="slotLayout"></slot>
+                
+                <slot name="slotLayout"></slot>           
             </el-main>
     </el-container>
 </el-container>

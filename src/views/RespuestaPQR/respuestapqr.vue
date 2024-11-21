@@ -2,18 +2,18 @@
   <layout-main>
     <template #slotLayout>
       <Header 
-      :titulo="'Paises'" 
-      :tituloBoton="'Crear pais'" 
+      :titulo="'Respuesta PQR'" 
+      :tituloBoton="'Crear Respuesta PQR'" 
       :abrir="abrirFormulario" />
      
 
 
-      <Formulario :titulo="'Gestion de paises'" v-model:is-Open="mostrarFormulario" :is-edit="editandoFormulario">
+      <Formulario :titulo="'Gestion de respuesta PQR'" v-model:is-Open="mostrarFormulario" :is-edit="editandoFormulario">
 
         <template #slotform>
           <el-row :gutter="20">
             <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
-              <formpaises v-model:is-open="mostrarFormulario":is-edit="editandoFormulario"/>
+              <formrespuestapqr v-model:is-open="mostrarFormulario":is-edit="editandoFormulario"/>
             </el-col>
           </el-row>
         </template>
@@ -41,7 +41,7 @@
 <script lang="ts" setup>
 
 import LayoutMain from '../../components/LayoutMain.vue';
-import formpaises from './components/formpaises.vue'
+import formrespuestapqr from './components/formrespuestapqr.vue'
 import Formulario from '../../components/Formulario.vue';
 import Header from '../../components/Header.vue';
 import { reactive, ref } from 'vue';
