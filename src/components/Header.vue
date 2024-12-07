@@ -1,8 +1,8 @@
 <template>
     <div class="container">
 
-<div class="container_header">
-    <h2 class="titulo">Modulo de {{ titulo }}</h2>
+<div class="container__header">
+    <h2 class="container__title">Modulo de {{ titulo }}</h2>
 <el-row justify="center" align="middle">
 
     <el-button type="primary" @click="abrir" class="padded-button">{{ tituloBoton }}</el-button> 
@@ -20,13 +20,11 @@
 <script setup>
 
 defineProps({
-    titulo: {type:String, Required:true},
-    tituloBoton: {type:String, Required:true},
-    abrir: {
-        type: Function,
-        Required:true
-    }
+  titulo: { type: String, required: true },
+  tituloBoton: { type: String, required: true },
+  abrir: { type: Function, required: true }
 })
+
 
 
 
@@ -38,12 +36,12 @@ margin-bottom: 10px;
 
 }
 
-.conatiner_header{
-display: flex;
-justify-content: space-between;
-border-bottom: 2px solid rgb(238, 233, 233);
-
+.container__header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(238, 233, 233);
 }
+
 
 .padded-button {
     padding: 20px;

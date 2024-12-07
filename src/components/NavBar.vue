@@ -40,5 +40,11 @@
     width: 100%;
     z-index: 10;
   }
+
+.el-menu-item, 
+span.el-avatar.el-avatar--circle {
+ margin-right: auto;
+ padding: 0;
+}
   </style>
   

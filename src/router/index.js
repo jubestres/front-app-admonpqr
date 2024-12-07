@@ -2,8 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import LayoutMain from "../components/LayoutMain.vue";
 import Login from "../components/Login.vue";
 import Arearespuesta from "../views/Arearespuesta/arearespuesta.vue";
-import component from "element-plus/es/components/tree-select/src/tree-select-option.mjs";
-import Paises from "../views/Paises/paises.vue";
+
 import Barrios from "../views/Barrios/barrios.vue";
 import Cliente from "../views/Cliente/cliente.vue";
 import PQR from "../views/PQR/pqr.vue";
@@ -13,10 +12,12 @@ import RespuestaPQR from "../views/RespuestaPQR/respuestapqr.vue";
 import TipoSolicitud from "../views/TipoSolicitud/tiposolicitud.vue";
 
 
+
+
 const routes = [
   {
-    path: "/Login",
-    name: "Login",
+    path: "/login",
+    name: "login",
     component: Login,
   },
   {
@@ -64,11 +65,7 @@ const routes = [
     name: "tiposolicitud",
     component:TipoSolicitud,
   },
-  {
-    path: "/paises",
-    name: "Paises",
-    component:Paises
-  },
+
 ];
 
 const router = createRouter({

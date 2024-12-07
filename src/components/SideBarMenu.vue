@@ -9,7 +9,7 @@
   >
     <el-sub-menu index="1">
       <template #title>
-        <el-icon><Location /></el-icon>
+        <el-icon><location /></el-icon>
         <span>Administrador</span>
       </template>
       <el-menu-item index="/Arearespuesta">Arearespuesta</el-menu-item>
@@ -33,10 +33,11 @@ import { Location } from '@element-plus/icons-vue';
 <style scoped>
 html, body {
   margin: 0;
+  padding: 0;
 }
 
 .el-menu-vertical-demo {
-  width: 250px;
+  width: fit-content;
   min-height: 100%;
 }
 </style>
